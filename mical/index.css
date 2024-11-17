@@ -1,0 +1,56 @@
+* {
+  background-color: #dddc83;
+}
+#heading {
+  color: #434137;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+  animation-name: mainhan;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes mainhan {
+  0% {
+    margin-top: 100px;
+    opacity: 0%;
+  }
+  100% {
+    margin-top: 1px;
+    opacity: 100%;
+  }
+}
+#θ-disp {
+  margin-top: 20px;
+}
+
+#statelabel {
+  margin-top: 20px;
+}
+#calval {
+  margin-top: 20px;
+}
+
+#build:hover {
+  animation-name: sideani;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes sideani {
+  100% {
+    background-color: #e1b400;
+    margin-left: 20px;
+  }
+}
+
+#calbtn:hover {
+  animation-name: sideani2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes sideani2 {
+  100% {
+    background-color: #8bc441;
+    margin-left: 20px;
+  }
+}

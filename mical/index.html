@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MI calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h1 id="heading">MI calculator θ</h1>
+    <label id="θ-disp">θ-value:</label>
+    <div>
+      <input type="number" placeholder="θ value" id="θ_val" />
+      <button onclick="build('θ_val', 'θ-value:')" id="build">build</button>
+      <br />
+      <label for="statelabel" id="pos">object_positon: </label>
+      <br />
+      <label for="statelabel">is symmetrical</label>
+      <input type="checkbox" id="statelabel" />
+      <button onclick="buildsymetrics()" id="build">build</button>
+      <br />
+      <label id="calval">no of images: </label>
+      <br />
+      <button onclick="cal()" id="calbtn">calculate</button>
+    </div>
+  </body>
+</html>
