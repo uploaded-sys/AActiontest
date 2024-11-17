@@ -46,6 +46,16 @@ li:hover{
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+ul a {
+    color: rgb(57, 184, 141);
+}
+
+a:hover{
+    animation-name: liani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes liani {
     100%{
         padding-left: 20px;
