@@ -47,6 +47,7 @@ li:hover{
     animation-fill-mode: forwards;
 }
 ul a {
+    text-decoration:none;
     color: rgb(57, 184, 141);
 }
 
