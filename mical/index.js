@@ -30,6 +30,7 @@ const caltheta = (el, objst) => {
       return s1;
     }
   }
+  return 'we are fixing this error at our end'
 };
 
 function buildsymetrics() {
