@@ -20,7 +20,6 @@ const caltheta = (el, objst) => {
   }
   let s1 = 360 / el;
 
-
   if (s1 % 2 === 0) {
     return s1 - 1;
   }
