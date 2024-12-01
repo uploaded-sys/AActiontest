@@ -19,7 +19,8 @@ const caltheta = (el, objst) => {
     return "infinite";
   }
   let s1 = 360 / el;
-
+  si = si.tostring().split('').at(0)
+  si = Number(si)
   if (s1 % 2 === 0) {
     return s1 - 1;
   }
