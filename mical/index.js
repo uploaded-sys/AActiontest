@@ -18,7 +18,7 @@ const caltheta = (el, objst) => {
   if (el == 0) {
     return "infinite";
   }
-  let s1 = 360 / el;
+  let s1 = Math.floor(360 / el);
   if (s1 % 2 === 0) {
     return s1 - 1;
   }
@@ -29,7 +29,7 @@ const caltheta = (el, objst) => {
       return s1;
     }
   }
-  return 'we are fixing this error at our end'
+  
 };
 
 function buildsymetrics() {
