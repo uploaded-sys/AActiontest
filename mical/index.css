@@ -1,6 +1,7 @@
 * {
   background-color: #dddc83;
-  cursor: url('https://uploaded-sys.github.io/AActiontest/images/cursor.png'),auto; 
+  cursor: url("https://uploaded-sys.github.io/AActiontest/images/cursor.png"),
+    auto;
 }
 #heading {
   color: #434137;
@@ -21,6 +22,9 @@
     opacity: 100%;
   }
 }
+#heading:hover {
+  text-decoration: underline #8bc441;
+}
 #θ-disp {
   margin-top: 20px;
 }
@@ -31,10 +35,37 @@
 #calval {
   margin-top: 20px;
 }
-
+#build {
+  height: 35px;
+  width: 80px;
+}
 #build:hover {
   animation-name: sideani;
   animation-duration: 1s;
+  animation-timing-function: linear(
+    0,
+    -0.011 4.8%,
+    -0.05 9.5%,
+    -0.26 23.4%,
+    -0.311 28%,
+    -0.322 30.4%,
+    -0.319 32.6%,
+    -0.302 34.7%,
+    -0.27 36.7%,
+    -0.144 40.9%,
+    0.061 44.8%,
+    0.779 53%,
+    1.04 56.9%,
+    1.215 61.1%,
+    1.272 63.4%,
+    1.308 65.8%,
+    1.323 69.2%,
+    1.304 72.9%,
+    1.256 76.9%,
+    1.051 90.4%,
+    1.012 95.1%,
+    1
+  );
   animation-fill-mode: forwards;
 }
 @keyframes sideani {
@@ -43,15 +74,71 @@
     margin-left: 20px;
   }
 }
-
+#calbtn {
+  height: 30px;
+  width: 80px;
+}
 #calbtn:hover {
   animation-name: sideani2;
   animation-duration: 1s;
+  animation-timing-function: linear(
+    0,
+    0.435 7.6%,
+    0.766 15.6%,
+    1.001 24.2%,
+    1.082 28.7%,
+    1.143 33.5%,
+    1.174 37.3%,
+    1.193 41.4%,
+    1.201 45.7%,
+    1.196 50.4%,
+    1.164 59%,
+    1.03 83.7%,
+    1.007 91.7%,
+    1
+  );
   animation-fill-mode: forwards;
 }
 @keyframes sideani2 {
   100% {
+    width: 100px;
+    height: 40px;
     background-color: #8bc441;
     margin-left: 20px;
+  }
+}
+#θ_val:hover {
+  animation-name: inputani;
+  animation-timing-function: linear(
+    0,
+    -0.011 4.8%,
+    -0.05 9.5%,
+    -0.26 23.4%,
+    -0.311 28%,
+    -0.322 30.4%,
+    -0.319 32.6%,
+    -0.302 34.7%,
+    -0.27 36.7%,
+    -0.144 40.9%,
+    0.061 44.8%,
+    0.779 53%,
+    1.04 56.9%,
+    1.215 61.1%,
+    1.272 63.4%,
+    1.308 65.8%,
+    1.323 69.2%,
+    1.304 72.9%,
+    1.256 76.9%,
+    1.051 90.4%,
+    1.012 95.1%,
+    1
+  );
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes inputani {
+  100% {
+    text-decoration: none;
+    padding-top: 20px;
   }
 }
