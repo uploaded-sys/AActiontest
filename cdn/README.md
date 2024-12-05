@@ -3,5 +3,4 @@
 
 ## CDN links:
 
-Theta calculator: https://uploaded-sys.github.io/AActiontest/cdn/javascript/thetacal.js|
-|---------------------|
+Theta calculator: https://uploaded-sys.github.io/AActiontest/cdn/javascript/thetacal.js
