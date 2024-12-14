@@ -18,7 +18,7 @@ const caltheta = (el, objst) => {
   if (el == 0) {
     return "infinite";
   }
-  let s1 = Math.floor(360 / el);
+  let s1 = Math.round(360 / el);
   if (s1 % 2 === 0) {
     return s1 - 1;
   }
