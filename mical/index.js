@@ -15,21 +15,24 @@ function cal() {
   calval.innerText = `no of images: ${answer}`;
 }
 const caltheta = (el, objst) => {
-  if (el == 0) {
-    return "infinite";
-  }
+  // Normalize angle
+  el = parseFloat(el);
+  el = ((Math.abs(el) % 360) + 360) % 360;
+  
+  // Handle special cases
+  if (el === 0 || el === 360) return "infinite";
+  if (el === 180) return 1;
+  if (el === 1) return 359;
+  if (el === 359) return 1;
+  
+  // Calculate number of images more precisely
   let s1 = Math.round(360 / el);
+  
+  // Handle odd/even cases with symmetry
   if (s1 % 2 === 0) {
     return s1 - 1;
   }
-  if (s1 % 2 === 1) {
-    if (objst === true) {
-      return s1 - 1;
-    } else {
-      return s1;
-    }
-  }
-  
+  return objst ? s1 - 1 : s1;
 };
 
 function buildsymetrics() {
@@ -44,4 +47,8 @@ function buildsymetrics() {
     st = "asymmetrical";
   }
   a.innerText = `object_positon: ${st}`;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { caltheta };
 }
