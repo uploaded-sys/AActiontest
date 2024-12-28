@@ -1,15 +1,35 @@
-# Geometric Optics Calculator Tests
+# Geometric Optics Calculator
 
-This project contains tests for a geometric optics calculator using Jest testing framework.
+A JavaScript calculator for geometric optics calculations with comprehensive test coverage.
+
+## Features
+
+- Angle calculations between objects
+- Reflection computations
+- Support for:
+  - Infinite cases (0° angles)
+  - Symmetric object positions
+  - Asymmetric object positions
+  - Edge cases (360° and 180°)
+
+## Prerequisites
+- Node.js 14 or higher
+- npm 6 or higher
+- Required packages:
+  - jest
+  - @types/jest
 
 ## Installation
 
-1. Make sure you have Node.js installed on your system
-2. Clone this repository
-3. Install dependencies by running:
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/mical.git
+cd mical
+```
+
+2. Install dependencies:
 ```bash
 npm install
-npm install --save-dev jest
 ```
 
 ## Configuration
@@ -21,6 +41,32 @@ npm install --save-dev jest
     "test": "jest"
   }
 }
+```
+
+## Usage
+
+### Basic Setup
+1. Create your test files in the test directory
+2. Run tests with:
+```bash
+npm test
+```
+
+### Advanced Options
+- `--coverage` : Generate coverage report
+- `--watch` : Watch mode
+- `--verbose` : Detailed output
+
+## Examples
+
+1. Basic test run:
+```bash
+npm test
+```
+
+2. With coverage:
+```bash
+npm test -- --coverage
 ```
 
 ## Running Tests
@@ -45,12 +91,27 @@ To get test coverage report, run:
 npx jest --coverage
 ```
 
-## Test Structure
+## Test Cases
 
-The tests verify various scenarios for the geometric optics calculator:
-- Infinite cases (0° angle)
-- Symmetric object positions
-- Asymmetric object positions
-- Odd and even division results
-- Negative angles
-- Special cases (360° and 180°)
+Our test suite covers:
+
+1. Angle Calculations
+   - Basic angle measurements
+   - Reflection angles
+   - Mirror symmetry
+
+2. Position Calculations
+   - Object distance from mirror
+   - Image formation
+   - Symmetric positions
+
+3. Special Cases
+   - Perpendicular rays
+   - Parallel rays
+   - Zero-angle cases
+
+4. Edge Cases
+   - 360° rotations
+   - 180° reflections
+   - Negative angles
+   - Boundary conditions
