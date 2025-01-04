@@ -73,5 +73,3 @@ We want this to be a welcoming and collaborative space for everyone. By particip
 By contributing to this repository, you agree that your contributions will be licensed under the [MIT License](LICENSE.md).
 
 ---
-
-Feel free to adjust the content as needed to match your project's tone and guidelines! Let me know if you need any modifications.
