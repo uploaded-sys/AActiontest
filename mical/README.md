@@ -21,6 +21,20 @@ A JavaScript calculator for geometric optics calculations with comprehensive tes
 
 ## Installation
 
+### Using the Installer (Recommended)
+
+1. Download the latest installer from the releases page:
+   - Windows: `see releases`
+   - macOS: `not made`
+   - Linux: `not made`
+
+2. Run the installer:
+   - Windows: Double-click the `.exe` file and follow the wizard
+   - macOS: not made
+   - Linux: not made
+
+### Manual Installation
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/mical.git
