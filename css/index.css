@@ -1,76 +1,94 @@
+/* Global Styles */
 * {
-    background-color: #2f363d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1b2a3a, #3d4c6d); /* GitHub-inspired background */
+    color: white;
     cursor: url('https://uploaded-sys.github.io/AActiontest/images/cursor.png'), auto;
-    transition: all 0.3s ease; /* Smooth transition for interactive elements */
+    transition: all 0.3s ease;
 }
 
-body h1 {
-    margin-top: 20%;
+/* Body Styles */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1b2a3a, #3d4c6d);
+}
+
+/* Flashcard Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Individual Flashcards */
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    color: #d3c22c;
+    font-size: 2.5rem;
     text-align: center;
-    color: azure;
-    font-size: 2rem;
-    animation-name: h1ani;
-    animation-duration: 4s;
-    animation-timing-function: ease-out; /* Smooth easing */
+    animation: fadeIn 2s ease-out;
 }
 
-@keyframes h1ani {
+/* Flashcard Title */
+.card h2 {
+    color: #49b915;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Keyframes for Fading In Elements */
+@keyframes fadeIn {
     0% {
-        margin-top: 40%;
         opacity: 0;
+        transform: translateY(20px);
     }
     100% {
-        margin-top: 20%;
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-#sou {
-    color: aquamarine;
-    transition: color 0.3s ease, padding-left 0.3s ease; /* Smooth transition */
+/* Hover effects for Flashcard Text */
+.card p {
+    color: #d3c22c;
+    transition: color 0.3s ease;
 }
 
-#sou:hover {
-    animation-name: souani;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.card:hover p {
+    color: #49b915;
 }
 
-@keyframes souani {
-    100% {
-        padding-left: 20px;
-        color: #d3c22c;
-    }
-}
-
-ul li {
-    color: rgb(57, 184, 141);
-    transition: padding-left 0.3s ease, color 0.3s ease; /* Smooth transitions on hover */
-}
-
-li:hover, ul a:hover {
-    animation-name: liani;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-ul a {
+/* Link Styling */
+a {
     text-decoration: none;
-    color: rgb(57, 184, 141);
-    transition: color 0.3s ease; /* Smooth transition for links */
+    color: #49b915;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    animation-name: liani;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes liani {
-    100% {
-        padding-left: 20px;
-        color: #49b915;
-    }
-}
-
+    color: #d3c22c;
 }
